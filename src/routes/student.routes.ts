@@ -11,6 +11,10 @@ router.get('/api/students',  studentController.getStudentList);
 
 router.get('/api/student/search', studentController.findStudentById);
 
+router.post('/api/student/add', studentController.addNewStudent);
+
+router.put('/api/student/update', studentController.updateStudentById);
+
 
 
 export default router;
